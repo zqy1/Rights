@@ -10,6 +10,18 @@ a, body {
     color: #333 !important;
 }
 
+.user_img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin: -10px 5px -4px 10px;
+}
+
+.user li {
+    text-align: center;
+}
+
 nav .sign-up {
 	width:80px;
     height:38px;
@@ -22,28 +34,41 @@ nav .sign-up {
     color:#ea6f5a !important;
     background-color:transparent
 }
-
 nav .sign-up, nav .sign-up:hover {
     transition: .1s ease-in;
     -webkit-transition: .1s ease-in;
     -moz-transition: .1s ease-in;
     -o-transition: .1s ease-in;
-    -ms-transition: .1s ease-in
 }
-
 nav .sign-up:hover {
     color: #ec6149 !important;
     border-color: #ec6149 !important;
     background-color: rgba(236, 97, 73, .05) !important
 }
 
+nav .write-btn {
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    padding: 8px 15px 8px 15px !important;
+    margin: 5px 5px 4px 15px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #fff !important;
+    background-color: #ea6f5a;
+}
 
-.note-list{
+nav .write-btn:hover {
+    background-color: #ea6f5a !important;
+}
+
+.note-list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.note-list li{
+
+.note-list li {
     position: relative;
     width: 100%;
     margin: 0 0 17px;
@@ -51,7 +76,8 @@ nav .sign-up:hover {
     border-bottom: 1px solid #f0f0f0;
     word-wrap: break-word;
 }
-.note-list .avatar img{
+
+.note-list .avatar img {
     width: 32px;
     height: 32px;
     border: 1px solid #ddd;
@@ -67,7 +93,8 @@ nav .sign-up:hover {
 .note-list .title:visited {
     color: #969696;
 }
-.note-list .title{
+
+.note-list .title {
     margin: 5px 0 4px;
     display: inherit;
     font-size: 18px;

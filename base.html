@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>权益说</title>
-    <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/icomoon.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
 
-
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body lang="zh-CN" >
 <!--Here is the navbar-->
@@ -36,17 +35,31 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="">主页<span class="sr-only">(current)</span></a></li>
-            <li><a href="#">图书馆</a></li>
+              <li><a href="#">公告栏</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <li><p class="navbar-text">欢迎你&nbsp;&nbsp;<span id="base_username"></span></p>
-              <li><a href="">注销</a></li>
-              <li><a href="">个人中心</a></li>
+
+              <li class="dropdown user">
+                  <a id="dLabel" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true"
+                     aria-expanded="false">
+                      <img class="user_img" src="728368da2b0d.png" alt="用户头像">
+                      <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                      <li><a href=""> 我的主页</a></li>
+                      <li><a href=""> 设置</a></li>
+                      <li><a href=""> 帮助与反馈</a></li>
+                      <li><a href=""> 退出</a></li>
+                  </ul>
+              </li>
+              <li><a class="write-btn" href="writer.html"><i class="glyphicon-pencil"></i> 写吐槽</a></li>
               <li><a class="log-in" href="">登录</a></li>
               <li><a class="sign-up" href="">注册</a></li>
-              <li><a class="sign-up" href="writer.html">写吐槽</a></li>
             </ul>
         </div>
+
+
     </div>
 </nav>
 
@@ -61,7 +74,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-16">
+        <div class="col-xs-12 col-md-9">
             <div class="list-group-item">
                 <ul class="note-list">
                     <li id="70551">
@@ -125,7 +138,19 @@
             </div>
 
         </div>
-        <div class="col-xs-7 col-xs-offset-1">
+        <div class="col-xs-6 col-md-3">
+            <div class="list-group-item">
+                <ul>
+                    <li>图书馆</li>
+                    <li>学生宿舍</li>
+                    <li>食堂</li>
+                    <li>超市</li>
+                    <li>任课教师</li>
+                    <li>其他</li>
+                </ul>
+
+            </div>
+
 
         </div>
     </div>
@@ -166,9 +191,11 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/css" src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<!--曾经这个让我一直以为Django不能很好的加载css模板，浪费了很久的时间，仅以为戒<script type="text/css" src="js/jquery.min.js"></script> -->
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/css" src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
